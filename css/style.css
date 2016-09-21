@@ -44,6 +44,7 @@ text-align: center;
 
 
 header{
+	background: white;
 	width: 1000px;
 	height: 120 px;
 	background: rgba(255, 255, 255, 10,70);
@@ -55,13 +56,23 @@ height: 50px;
 background: red;
 border-radius: 10px;
 
-}
-ul{
-margin: auto;
-padding-top: 4px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8b8b8b+0,6a6a6a+50,5e5e5e+51,717171+100 */
+background: #8b8b8b; /* Old browsers */
+background: -moz-linear-gradient(top,  #8b8b8b 0%, #6a6a6a 50%, #5e5e5e 51%, #717171 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #8b8b8b 0%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#717171',GradientType=0 ); /* IE6-9 */
 }
 
-li{
+ul, ol{
+list-style: none;
+margin: auto;
+padding-top: 4px;
+height: auto;
+width: auto;
+}
+
+/*li{
 	float: left;
 	list-style-type: none;
 	padding: 10px;
@@ -71,7 +82,7 @@ li{
 	box-shadow: 0 0 10px white inset; 
 
 }
-
+*/
 section{
 	width: 700px;
 	background: gray;
@@ -94,7 +105,7 @@ aside{
 footer{
 width: 1000px;
 height: 70px;
-background: maroon;
+background: black;
 float: left;
 margin-top: 20px;
 border-radius: 10px;
@@ -122,6 +133,60 @@ p{
 .menu:visited{color: white; text-decoration: none;}
 .menu:hover{color: white; text-decoration: none; text-shadow: 0 0 13px white;}
 .menu:active{color: white; text-decoration: none;}
+
+.menu{
+	width: 85%;
+	display: table;
+	table-layout: fixed;
+	float: left;
+
+}
+
+
+.menu  li {
+	display: table-cell;
+	overflow: hidden;
+	width: 100%;
+	border-right: 1px solid #5C5C5C;
+	border-left: 1px solid rgba(255,255,255,.2);
+	text-align: center;
+	
+
+
+}
+
+.menu li:first-child {
+	border-left: none;
+
+}
+
+.menu li:first-child:hover {
+	border-left: none;
+}
+
+.menu li a {
+	color: #FF5900;
+	display: block;
+	font-family: "Franklin Gotic Book",Times;
+	font-size: 16px;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 3px 3px 2px rgba(0,0,0,.3);
+}
+
+.menu li:hover {
+	background: rgba(0,0,0,.3);
+	border-right: 2px solid-transparent;
+	border-left: 2px solid-transparent;
+	border-bottom: none;
+}
+
+.menu li:active {
+	background: rgba(0,0,0,.3);
+	box-shadow: inset 0px 3px 2px rgba(0,0,0,1);
+}
+
 
 /*SEUDO CLASES*/
 
