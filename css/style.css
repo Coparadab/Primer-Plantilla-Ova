@@ -55,6 +55,7 @@ height: 50px;
 background: #808080;
 border-radius: 10px;
 
+
 }
 
 ul{
@@ -81,7 +82,7 @@ section{
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
-	position: relative;
+	position: inherit;
 }
 aside{
 
